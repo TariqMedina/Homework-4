@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Word Game</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <!-- Cabin Sketch Font -->
+  <link href="https://fonts.googleapis.com/css?family=Unlock" rel="stylesheet">
+  <style>
+    body {
+      background-color: black;
+      background-image: url("Images/background.jpg");
+    }
+    .cabin {
+      font-family: 'Unlock', cursive;
+      color: white;
+      height:100px;
+    }
+    .cabin2 {
+      font-family: 'Unlock', cursive;
+      color: white;
+      margin-top: 50px;
+      font-size: 20px;
+    }
+
+    .cabin3 {
+      font-family: 'Unlock', cursive;
+      color: white;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .main {
+      background-color: gray;
+      opacity: 0.8;
+    }
+    #imagehold {
+      max-height:450px;
+    }
+    .fighter {
+        background-color:white;
+        opacity:0.5;
+        margin: auto;
+    }
+
+    .thumb {
+        max-width: 170px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container main mt-1 rounded">
+
+    <h1 class = "cabin text-center py-3">Star Wars Fighting Game</h1>
+    <div class="container">
+    <div class="row text-center">
+        <div id="Obiwan" class="fighter text-center rounded">
+            <p>Obi-Wan Kanobi</p>
+            <img class="thumb" src="Images/obiwan.jpg"></img>
+            <p>HP: 200</p>
+        </div>
+        <div id="Luke" class="fighter text-center rounded">
+            <p>Luke Skywalker</p>
+            <img class="thumb" src="Images/luke.jpg"></img>
+            <p>HP: 200</p>
+        </div>
+        
+        <div id="Palpatine" class="fighter text-center rounded">
+            <p>Darth Sidious</p>
+            <img class="thumb" src="Images/palpatine.jpg"></img>
+            <p>HP: 200</p>
+        </div>
+        <div id="Maul" class="fighter text-center rounded">
+            <p>Darth Maul</p>
+            <img class="thumb" src="Images/maul.jpg"></img>
+            <p>HP: 200</p>
+        </div>
+    </div>
+</div>
+    <p class = "cabin3 text-center align-bottom pb-0 mb-0">Versus</p>
+    <div class="row p-3">
+        <div id="box1" class="col-md-6 text-center" style="height: 450px; border-style:dashed; border-width: 7px;">
+            <p id="fighter1text" class="cabin2"></p>
+            <div id="fighter1" class="container">
+                <p id="fighter1name" class="cabin2" style="color:black"></p>
+                <img id="fighter1img"></img>
+                <p id="fighter1hp" style="color:red; font-weight: bold;"></p>
+            </div>
+        </div>
+        <div id="box2" class="col-md-6 text-center" style="height: 450px; border-style:dashed; border-width: 7px;">
+                <p id="fighter2text" class="cabin2"></p>
+                <div id="fighter2" class="container">
+                    <p id="fighter2name" class="cabin2" style="color:black"></p>
+                    <img id="fighter2img"></img>
+                    <p id="fighter2hp" style="color:red; font-weight: bold;"></p>
+                </div>
+        </div>
+    </div>
+    <div class="row text-center mt-3">
+        <button id="reset" class="btn btn-success cabin3" style="margin:20px auto;">RESET</button>
+    </div>
+  
+  </div>
+        
+  
+  </div>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+
+  <!-- Bootstrap JavaScript CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
+  <script src="js/game.js"></script>
+</body>
+
+</html>
